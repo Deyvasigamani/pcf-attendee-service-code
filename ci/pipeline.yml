@@ -11,6 +11,7 @@ jobs:
   public: true
   plan:
   - get: attendee-service
+    trigger: true
   - task: package
     privileged: true
     file: attendee-service/ci/tasks/package.yml
